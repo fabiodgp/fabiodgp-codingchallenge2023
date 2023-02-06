@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+}
+
+body > div {  /*contenitore generale*/
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 1% 0% 0% 15%;
+  width: 70%;
+  padding: 65px;
+}
+
+header img { /*logo*/
+  width: 25%;
+  display: block;
+}
+
+header div { /*titolo*/
+  font-size: 160%;
+  text-align: center;
+  color: #37EB47
+}
+
+nav { /*barra navigazione*/
+  padding: 1%;
+}
+
+nav div { /*contenitore pulsanti*/
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+header img, nav div { /*logo+contenitore pulsanti*/
+  margin: auto;
+}
+
+button { /*pulsanti*/
+  font-size: 10px;
+  margin: 2px;
+}
+
+main section { /*info monopattini*/
+  color: white;
+}
+
+section div { /*distanza+stato carica*/
+  font-size: 15px;
+}
+
+section div:last-child { /*indicatore carica*/
+  height: 20px;
+  border-radius: 5px;
+}
+
+.statocarica1 { /*indicatore1*/
+  width: 40%;
+  background-color: #F4B941;
+}
+
+.statocarica2 { /*indicatore2*/
+  width: 55%;
+}
+
+.statocarica3 { /*indicatore3*/
+  width: 20%;
+  background-color: #E4464D;
+}
+
+nav, .statocarica2 { /*barra navigazione+indicatore2*/
+  background-color: #37EB47;
+}
